@@ -8,5 +8,12 @@
 </head>
 <body>
 You've come to the menu
+
+<form action="/logout" method="POST">
+	<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+	<input type="submit" value="Log out"/>
+</form>
+
+
 </body>
 </html>
