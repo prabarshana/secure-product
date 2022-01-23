@@ -22,5 +22,11 @@ public class HomeController {
 		logger.info("Loading menu page..");
 		return "menu";
 	}
+	
+	@RequestMapping("/signup")
+	public String signup() {
+		logger.info("Loading sign up page..");
+		return "signup";
+	}
 
 }
